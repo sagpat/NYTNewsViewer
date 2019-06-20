@@ -1,7 +1,7 @@
 const INITIAL_STATE = {
     newsData: [],
-    showLoding: true,
-    error: ''
+    showLoading: true,
+    isError: false
 }
 
 const NewsDataReducer = (state = INITIAL_STATE, action = {}) => {
@@ -9,13 +9,13 @@ const NewsDataReducer = (state = INITIAL_STATE, action = {}) => {
         case "SET_POPULAR_NEWS_DATA":
             return {
                 newsData: action.payload,
-                showLoding: false
+                showLoading: false
             };
 
         case "DATA_FETCH_ERROR":
             return {
-                error: action.payload.error,
-                showLoding: false
+                isError: action.payload.error,
+                showLoading: false
             }
 
         default:

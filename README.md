@@ -21,3 +21,5 @@ Techonogy stack used:
 2. For checking the test coverage run the command - `npm test -- --coverage`
 
 - Test coverage for the application is as below - 
+
+![alt text](https://github.com/sagpat/NYTNewsViewer/blob/master/results/test_coverage_results.PNG)

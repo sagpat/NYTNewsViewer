@@ -4,7 +4,7 @@ const INITIAL_STATE = {
     error: ''
 }
 
-const LoginReducer = (state = INITIAL_STATE, action = {}) => {
+const NewsDataReducer = (state = INITIAL_STATE, action = {}) => {
     switch (action.type) {
         case "SET_POPULAR_NEWS_DATA":
             return {
@@ -14,7 +14,7 @@ const LoginReducer = (state = INITIAL_STATE, action = {}) => {
 
         case "DATA_FETCH_ERROR":
             return {
-                error: action.payload,
+                error: action.payload.error,
                 showLoding: false
             }
 
@@ -23,4 +23,4 @@ const LoginReducer = (state = INITIAL_STATE, action = {}) => {
     }
 };
 
-export default LoginReducer;
+export default NewsDataReducer;

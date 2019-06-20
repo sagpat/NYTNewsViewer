@@ -13,7 +13,7 @@ function* getData() {
             payload: response
         });
     } catch (err) {
-        yield put({ type: 'DATA_FETCH_ERROR', payload: 'Bad Data' });
+        yield put({ type: 'DATA_FETCH_ERROR', payload: { error: true } });
     }
 }
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import DisplayPopularNews from "./containers/DisplayPopularNews";
+import DisplayPopularNewsContainer from "./containers/DisplayPopularNewsContainer";
 
-const Routes = () =>(
+const Routes = () => (
     <Switch>
-        <Route exact path="/" component={DisplayPopularNews} />
+        <Route exact path="/" component={DisplayPopularNewsContainer} />
         {/*
             This app has a single screen. 
-            Please add more routes here, if require. 
+            Please add more routes here, in future if require. 
         */}
     </Switch>
 );

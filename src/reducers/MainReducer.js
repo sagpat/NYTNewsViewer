@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import LoginReducer from './LoginReducer';
+import NewsDataReducer from './NewsDataReducer';
 
 const Reducer = combineReducers({
-    loginData: LoginReducer,
+    newsData: NewsDataReducer,
 });
 
 export default Reducer;

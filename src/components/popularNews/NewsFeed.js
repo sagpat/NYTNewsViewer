@@ -14,6 +14,7 @@ const NewsFeed = (props) => {
                             writtenBy={data.byline}
                             publishedDate={data.published_date}
                             newsLink={data.url}
+                            media={data.media}
                         />
                     </UnorderedList>
                 )

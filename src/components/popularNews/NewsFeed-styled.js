@@ -22,6 +22,11 @@ export const ListedItem = styled.li`
     cursor: pointer;
 `;
 
+export const Image = styled.img`
+    margin-right: 15px;
+    border-radius: 50%;
+`
+
 export const HeadingLevelOne = styled.h1`
     font-size: 20px;
     font-weight: 400;

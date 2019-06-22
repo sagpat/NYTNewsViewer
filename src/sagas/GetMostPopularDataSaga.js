@@ -4,7 +4,7 @@ export default function* getMostPopularData() {
     yield takeEvery("FETCH_POPULAR_NEWS_DATA", getData);
 }
 
-function* getData() {
+export function* getData() {
     try {
         const response = yield fetchNewData();
 

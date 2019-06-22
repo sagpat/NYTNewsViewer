@@ -22,7 +22,7 @@ describe('the fetch result for most popular news data', () => {
     });
 
     it('fetched result for news data', () => {
-        const clone = generator.clone();
+        const clone = generator.clone()
         let response = clone.next(newsJson).value;
         expect(response).toEqual(
             put({

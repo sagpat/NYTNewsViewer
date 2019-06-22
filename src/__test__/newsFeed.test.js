@@ -1,27 +1,39 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import NewsFeed from '../components/popularNews/NewsFeed';
-import { Heading } from '../components/popularNews/NewsFeed-styled';
-import NewsItems from '../components/popularNews/NewsItems';
+import { Heading, UnorderedList } from '../components/popularNews/NewsFeed-styled';
 
 let wrapper;
-const props = {};
+const popularNewsData = [
+    {
+        abstract: 'Test news data',
+        byline: '"By MICHAEL D. SHEAR',
+        published_date: '23/05/2019',
+        url: '"https://www.nytimes.com/2019/06/20/world/middleeast/iran-us-drone.html"',
+        media: [
+            {
+                caption: "“Let’s see what happens,” President Trump said Thursday after Iran shot down an American surveillance drone.",
+                copyright: "Erin Schaff/The New York Times"
+            }
+        ]
+    }
+];
 
 beforeEach(() => {
-    wrapper = shallow(<NewsFeed />);
+    wrapper = shallow(<NewsFeed popularNewsData={popularNewsData} />);
 });
 
 describe('NewsFeed rendering', () => {
     it('renders correctly', () => {
-        expect(wrapper.debug()).toMatchSnapshot();
+        expect(wrapper).toMatchSnapshot();
     });
 
     it('should render one heading', () => {
         expect(wrapper.find(Heading)).toHaveLength(1);
     });
 
-    it('should have NewsItems component', () => {
-        expect(wrapper.find(<NewsItems />)).toHaveBeenCalled();
+    it('should render one ul element', () => {
+        expect(wrapper.find(UnorderedList)).toHaveLength(1);
     });
 });
 

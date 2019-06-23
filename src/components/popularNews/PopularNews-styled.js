@@ -70,3 +70,10 @@ export const Button = styled.button`
     outline: none;
     cursor: pointer;
 `;
+
+export const NewsSection = styled.div`
+    border: 1px solid #E0CA3C;
+    padding: 5px;
+    margin: auto;
+    display: inline-block;
+`;

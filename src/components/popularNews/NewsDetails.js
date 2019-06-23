@@ -1,5 +1,5 @@
 import React from 'react';
-import { SummaryParagraph, Section, HeadingTwoAuthor, HeadingTwoDate } from './PopularNews-styled';
+import { SummaryParagraph, Section, HeadingTwoAuthor, HeadingTwoDate, NewsSection } from './PopularNews-styled';
 
 const NewsDetails = (props) => {
     return (
@@ -9,6 +9,7 @@ const NewsDetails = (props) => {
                 <HeadingTwoAuthor>{props.writtenBy ? props.writtenBy : '-'}</HeadingTwoAuthor>
                 <HeadingTwoDate>Published Date: {props.publishedDate}</HeadingTwoDate>
             </Section>
+            <NewsSection>{props.section}</NewsSection>
         </React.Fragment>
     );
 };

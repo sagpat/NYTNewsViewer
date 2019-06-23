@@ -36,20 +36,17 @@ ShallowWrapper {
           src="https://static01.nyt.com/images/2019/06/21/us/politics/20dc-military1-sub/20dc-arms1-sub-square320.jpg"
           width="100px"
         />,
-        <ForwardRef(styled.header)>
-          <ForwardRef(styled.h1) />
-          <ForwardRef(styled.section)>
-            <ForwardRef(styled.h2) />
-            <ForwardRef(styled.h2)>
-              Published Date: 
-            </ForwardRef(styled.h2)>
-          </ForwardRef(styled.section)>
-        </ForwardRef(styled.header)>,
-        <ForwardRef(styled.button)>
+        <ForwardRef(styled.div)>
+          <ForwardRef(styled.button)
+            onClick={[Function]}
+          />
+        </ForwardRef(styled.div)>,
+        <ForwardRef(styled.button)
+          onClick={[Function]}
+        >
           &gt;
         </ForwardRef(styled.button)>,
       ],
-      "onClick": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -93,13 +90,10 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": Array [
-            <ForwardRef(styled.h1) />,
-            <ForwardRef(styled.section)>
-              <ForwardRef(styled.h2) />
-              <ForwardRef(styled.h2)>
-                Published Date: 
-              </ForwardRef(styled.h2)>
-            </ForwardRef(styled.section)>,
+            <ForwardRef(styled.button)
+              onClick={[Function]}
+            />,
+            false,
           ],
         },
         "ref": null,
@@ -110,6 +104,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "children": undefined,
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -121,131 +116,29 @@ ShallowWrapper {
                 "isStatic": true,
                 "rules": Array [
                   "
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
+    padding-left: 0;
     margin-bottom: 0;
+    text-align: left;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
 ",
                 ],
               },
-              "displayName": "styled.h1",
+              "displayName": "styled.button",
               "foldedComponentIds": Array [],
               "render": [Function],
               "styledComponentId": "sc-EHOje",
-              "target": "h1",
+              "target": "button",
               "toString": [Function],
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             },
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": Array [
-                <ForwardRef(styled.h2) />,
-                <ForwardRef(styled.h2)>
-                  Published Date: 
-                </ForwardRef(styled.h2)>,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "children": undefined,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-gzVnrw",
-                    "isStatic": true,
-                    "rules": Array [
-                      "
-    font-size: 16px;
-    font-weight: 400;
-",
-                    ],
-                  },
-                  "displayName": "styled.h2",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-gzVnrw",
-                  "target": "h2",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                },
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "children": Array [
-                    "Published Date: ",
-                    undefined,
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  "Published Date: ",
-                  undefined,
-                ],
-                "type": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "sc-htoDjs",
-                    "isStatic": true,
-                    "rules": Array [
-                      "
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: auto;
-    order: 2;
-",
-                    ],
-                  },
-                  "displayName": "styled.h2",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "sc-htoDjs",
-                  "target": "h2",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                },
-              },
-            ],
-            "type": Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "sc-bZQynM",
-                "isStatic": true,
-                "rules": Array [
-                  "
-    display: flex;
-",
-                ],
-              },
-              "displayName": "styled.section",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "sc-bZQynM",
-              "target": "section",
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            },
-          },
+          false,
         ],
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
@@ -259,11 +152,11 @@ ShallowWrapper {
 ",
             ],
           },
-          "displayName": "styled.header",
+          "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
           "styledComponentId": "sc-bwzfXH",
-          "target": "header",
+          "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
@@ -275,6 +168,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": ">",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": ">",
@@ -282,7 +176,7 @@ ShallowWrapper {
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-dnqmqq",
+            "componentId": "sc-iwsKbI",
             "isStatic": true,
             "rules": Array [
               "
@@ -301,7 +195,7 @@ ShallowWrapper {
           "displayName": "styled.button",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "sc-dnqmqq",
+          "styledComponentId": "sc-iwsKbI",
           "target": "button",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -320,7 +214,6 @@ ShallowWrapper {
     display: flex;
     padding: 10px;
     border-bottom: 1px solid #89ec26;
-    cursor: pointer;
 ",
         ],
       },
@@ -346,20 +239,17 @@ ShallowWrapper {
             src="https://static01.nyt.com/images/2019/06/21/us/politics/20dc-military1-sub/20dc-arms1-sub-square320.jpg"
             width="100px"
           />,
-          <ForwardRef(styled.header)>
-            <ForwardRef(styled.h1) />
-            <ForwardRef(styled.section)>
-              <ForwardRef(styled.h2) />
-              <ForwardRef(styled.h2)>
-                Published Date: 
-              </ForwardRef(styled.h2)>
-            </ForwardRef(styled.section)>
-          </ForwardRef(styled.header)>,
-          <ForwardRef(styled.button)>
+          <ForwardRef(styled.div)>
+            <ForwardRef(styled.button)
+              onClick={[Function]}
+            />
+          </ForwardRef(styled.div)>,
+          <ForwardRef(styled.button)
+            onClick={[Function]}
+          >
             &gt;
           </ForwardRef(styled.button)>,
         ],
-        "onClick": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -403,13 +293,10 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": Array [
-              <ForwardRef(styled.h1) />,
-              <ForwardRef(styled.section)>
-                <ForwardRef(styled.h2) />
-                <ForwardRef(styled.h2)>
-                  Published Date: 
-                </ForwardRef(styled.h2)>
-              </ForwardRef(styled.section)>,
+              <ForwardRef(styled.button)
+                onClick={[Function]}
+              />,
+              false,
             ],
           },
           "ref": null,
@@ -420,6 +307,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "children": undefined,
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": null,
@@ -431,131 +319,29 @@ ShallowWrapper {
                   "isStatic": true,
                   "rules": Array [
                     "
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
+    padding-left: 0;
     margin-bottom: 0;
+    text-align: left;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
 ",
                   ],
                 },
-                "displayName": "styled.h1",
+                "displayName": "styled.button",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-EHOje",
-                "target": "h1",
+                "target": "button",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               },
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "children": Array [
-                  <ForwardRef(styled.h2) />,
-                  <ForwardRef(styled.h2)>
-                    Published Date: 
-                  </ForwardRef(styled.h2)>,
-                ],
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-gzVnrw",
-                      "isStatic": true,
-                      "rules": Array [
-                        "
-    font-size: 16px;
-    font-weight: 400;
-",
-                      ],
-                    },
-                    "displayName": "styled.h2",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-gzVnrw",
-                    "target": "h2",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  },
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": Array [
-                      "Published Date: ",
-                      undefined,
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Published Date: ",
-                    undefined,
-                  ],
-                  "type": Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "sc-htoDjs",
-                      "isStatic": true,
-                      "rules": Array [
-                        "
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: auto;
-    order: 2;
-",
-                      ],
-                    },
-                    "displayName": "styled.h2",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "sc-htoDjs",
-                    "target": "h2",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
-                  },
-                },
-              ],
-              "type": Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "sc-bZQynM",
-                  "isStatic": true,
-                  "rules": Array [
-                    "
-    display: flex;
-",
-                  ],
-                },
-                "displayName": "styled.section",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "sc-bZQynM",
-                "target": "section",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
-              },
-            },
+            false,
           ],
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -569,11 +355,11 @@ ShallowWrapper {
 ",
               ],
             },
-            "displayName": "styled.header",
+            "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "sc-bwzfXH",
-            "target": "header",
+            "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
@@ -585,6 +371,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": ">",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": ">",
@@ -592,7 +379,7 @@ ShallowWrapper {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-dnqmqq",
+              "componentId": "sc-iwsKbI",
               "isStatic": true,
               "rules": Array [
                 "
@@ -611,7 +398,7 @@ ShallowWrapper {
             "displayName": "styled.button",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-dnqmqq",
+            "styledComponentId": "sc-iwsKbI",
             "target": "button",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -630,7 +417,6 @@ ShallowWrapper {
     display: flex;
     padding: 10px;
     border-bottom: 1px solid #89ec26;
-    cursor: pointer;
 ",
           ],
         },
@@ -671,5 +457,6 @@ ShallowWrapper {
     Symbol(enzyme.__providerValues__): undefined,
   },
   Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
 }
 `;

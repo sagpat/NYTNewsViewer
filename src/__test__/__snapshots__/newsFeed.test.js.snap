@@ -118,7 +118,7 @@ ShallowWrapper {
         "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "media": Array [
               Object {
@@ -128,7 +128,9 @@ ShallowWrapper {
             ],
             "newsLink": "\\"https://www.nytimes.com/2019/06/20/world/middleeast/iran-us-drone.html\\"",
             "publishedDate": "23/05/2019",
+            "section": undefined,
             "summary": "Test news data",
+            "title": undefined,
             "writtenBy": "\\"By MICHAEL D. SHEAR",
           },
           "ref": null,
@@ -250,7 +252,7 @@ ShallowWrapper {
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
               "media": Array [
                 Object {
@@ -260,7 +262,9 @@ ShallowWrapper {
               ],
               "newsLink": "\\"https://www.nytimes.com/2019/06/20/world/middleeast/iran-us-drone.html\\"",
               "publishedDate": "23/05/2019",
+              "section": undefined,
               "summary": "Test news data",
+              "title": undefined,
               "writtenBy": "\\"By MICHAEL D. SHEAR",
             },
             "ref": null,

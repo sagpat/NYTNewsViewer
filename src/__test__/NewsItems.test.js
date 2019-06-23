@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { ListedItem, ItemDiv } from '../components/popularNews/NewsFeed-styled';
+import { ListedItem, ItemDiv, Button } from '../components/popularNews/PopularNews-styled';
 import NewsItems from '../components/popularNews/NewsItems';
 
 let wrapper;
@@ -44,9 +44,9 @@ describe('<NewsItems /> rendering', () => {
     });
 
 
-    it('should simulate li area click', () => {
+    it('should simulate Button click event', () => {
         global.open = jest.fn()
-        wrapper.find(ListedItem).simulate('click');
+        wrapper.find(Button).simulate('click');
         expect(global.open.mock.calls.length).toEqual(1);
     });
 

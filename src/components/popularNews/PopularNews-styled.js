@@ -6,7 +6,7 @@ export const Heading = styled.header`
     padding: 15px;
 `;
 
-export const ItemDiv = styled.header`
+export const ItemDiv = styled.div`
     width: 100%
 `;
 
@@ -19,7 +19,6 @@ export const ListedItem = styled.li`
     display: flex;
     padding: 10px;
     border-bottom: 1px solid #89ec26;
-    cursor: pointer;
 `;
 
 export const Image = styled.img`
@@ -27,10 +26,20 @@ export const Image = styled.img`
     border-radius: 50%;
 `
 
-export const HeadingLevelOne = styled.h1`
-    font-size: 20px;
+export const TitleButton = styled.button`
+    font-size: 17px;
     font-weight: 400;
+    padding-left: 0;
     margin-bottom: 0;
+    text-align: left;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+`;
+
+export const SummaryParagraph = styled.p`
+    padding-right: 5px;
 `;
 
 export const Section = styled.section`

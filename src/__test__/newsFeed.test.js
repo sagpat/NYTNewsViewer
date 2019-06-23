@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import NewsFeed from '../components/popularNews/NewsFeed';
-import { Heading, UnorderedList } from '../components/popularNews/NewsFeed-styled';
+import { Heading, UnorderedList } from '../components/popularNews/PopularNews-styled';
 
 let wrapper;
 const popularNewsData = [

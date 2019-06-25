@@ -4,11 +4,12 @@ const INITIAL_STATE = {
     isError: false
 }
 
-const NewsDataReducer = (state = INITIAL_STATE, action = {}) => {
+const handleFetchedNewsReducer = (state = INITIAL_STATE, action = {}) => {
     switch (action.type) {
         case "SET_POPULAR_NEWS_DATA":
             return {
                 newsData: action.payload,
+                isError: false,
                 showLoading: false
             };
 
@@ -23,4 +24,4 @@ const NewsDataReducer = (state = INITIAL_STATE, action = {}) => {
     }
 };
 
-export default NewsDataReducer;
+export default handleFetchedNewsReducer;

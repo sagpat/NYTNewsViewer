@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchPopularNewsData } from "../actions/app.actions";
-import { LoadingDiv } from './DisplayPopularNewsContainer-styled';
+import { ActivateLoader } from './DisplayPopularNewsContainer-styled';
 import NewsFeed from '../components/popularNews/NewsFeed';
 
 class DisplayPopularNewsContainer extends Component {
@@ -14,11 +14,8 @@ class DisplayPopularNewsContainer extends Component {
 
         return (
             <React.Fragment>
-                {showLoading ? <LoadingDiv>Loading...</LoadingDiv>
-                    : isError
-                        ? <div>Error fetching data</div>
-                        : <NewsFeed popularNewsData={newsData} />
-                }
+                {showLoading ? <ActivateLoader>Loading...</ActivateLoader> :
+                    newsData && !isError ? <NewsFeed popularNewsData={newsData} /> : <div>Error fetching data</div>}
             </React.Fragment>
         )
     }

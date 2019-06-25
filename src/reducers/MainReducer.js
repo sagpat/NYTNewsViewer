@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import NewsDataReducer from './NewsDataReducer';
+import handleFetchedNewsReducer from './HandleFetchedNewsReducer';
 
 const Reducer = combineReducers({
-    newsData: NewsDataReducer
+    newsData: handleFetchedNewsReducer
 });
 
 export default Reducer;

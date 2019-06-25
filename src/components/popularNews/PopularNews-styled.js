@@ -6,7 +6,7 @@ export const Heading = styled.header`
     padding: 15px;
 `;
 
-export const ItemDiv = styled.div`
+export const ItemWrapper = styled.div`
     width: 100%
 `;
 

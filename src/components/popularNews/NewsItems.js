@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
     ListedItem,
-    ItemDiv,
+    ItemWrapper,
     TitleButton,
     Button,
     Image
@@ -25,11 +25,12 @@ class NewsItems extends Component {
     }
 
     render() {
-        const { url } = this.props.media[0]["media-metadata"][0];
+        const [{ 'media-metadata': [{ url }] }] = this.props.media;
+
         return (
             <ListedItem >
                 <Image src={url} height="100px" width="100px" />
-                <ItemDiv>
+                <ItemWrapper>
                     <TitleButton onClick={this.toggleNewsDetails}>{this.props.title}</TitleButton>
                     {this.state.showNewsDetails &&
                         <NewsDetails
@@ -39,7 +40,7 @@ class NewsItems extends Component {
                             section={this.props.section}
                         />
                     }
-                </ItemDiv>
+                </ItemWrapper>
                 <Button onClick={() => this.onClickShowCompleteNewsButton(this.props.newsLink)}>></Button>
             </ListedItem>
         );

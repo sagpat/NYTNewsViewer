@@ -34,6 +34,7 @@
   ],
   "devDependencies": {
     "babel-preset-react": "^6.24.1",
-    "enzyme-adapter-react-16": "^1.14.0"
+    "enzyme-adapter-react-16": "^1.14.0",
+    "es6-object-assign": "^1.1.0"
   }
 }

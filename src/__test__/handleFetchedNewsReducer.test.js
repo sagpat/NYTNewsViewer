@@ -1,4 +1,4 @@
-import NewsDataReducer from '../reducers/NewsDataReducer';
+import handleFetchedNewsReducer from '../reducers/HandleFetchedNewsReducer';
 
 describe('Customer API Reducer', () => {
     it('should return the initial state', () => {
@@ -7,7 +7,7 @@ describe('Customer API Reducer', () => {
             showLoading: true,
             isError: false
         };
-        expect(NewsDataReducer(undefined, {})).toEqual(INITIAL_STATE);
+        expect(handleFetchedNewsReducer(undefined, {})).toEqual(INITIAL_STATE);
     });
 
     it('should get news data', () => {
@@ -26,8 +26,9 @@ describe('Customer API Reducer', () => {
                 byline: 'Adam A',
                 date: '20/06/2000'
             },
-            showLoading: false
+            showLoading: false,
+            isError: false
         }
-        expect(NewsDataReducer({}, action)).toEqual(expectedAction);
+        expect(handleFetchedNewsReducer({}, action)).toEqual(expectedAction);
     });
 });

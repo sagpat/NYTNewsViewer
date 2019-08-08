@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import {
     ListedItem,
     ItemWrapper,
@@ -8,43 +8,32 @@ import {
 } from './PopularNews-styled';
 import NewsDetails from './NewsDetails';
 
-class NewsItems extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            showNewsDetails: false
-        }
-    };
 
-    toggleNewsDetails = () => {
-        this.setState((prevState) => ({ showNewsDetails: !prevState.showNewsDetails }));
-    }
+const onClickShowCompleteNewsButton = (newsLink) => {
+    window.open(newsLink, '_blank');
+}
 
-    onClickShowCompleteNewsButton = (newsLink) => {
-        window.open(newsLink, '_blank');
-    }
-
-    render() {
-        const [{ 'media-metadata': [{ url }] }] = this.props.media;
+const NewsItems = (props) => {
+    const [showNewsDetails, setNewsDetails] = useState(false);
+    const [{ 'media-metadata': [{ url }] }] = props.media;
 
         return (
             <ListedItem >
                 <Image src={url} height="100px" width="100px" />
                 <ItemWrapper>
-                    <TitleButton onClick={this.toggleNewsDetails}>{this.props.title}</TitleButton>
-                    {this.state.showNewsDetails &&
+                    <TitleButton onClick={ () => setNewsDetails(!showNewsDetails)}>{props.title}</TitleButton>
+                    {showNewsDetails &&
                         <NewsDetails
-                            summary={this.props.summary}
-                            writtenBy={this.props.writtenBy}
-                            publishedDate={this.props.publishedDate}
-                            section={this.props.section}
+                            summary={props.summary}
+                            writtenBy={props.writtenBy}
+                            publishedDate={props.publishedDate}
+                            section={props.section}
                         />
                     }
                 </ItemWrapper>
-                <Button onClick={() => this.onClickShowCompleteNewsButton(this.props.newsLink)}>></Button>
+                <Button onClick={() => onClickShowCompleteNewsButton(props.newsLink)}>></Button>
             </ListedItem>
         );
     }
-};
 
 export default NewsItems;

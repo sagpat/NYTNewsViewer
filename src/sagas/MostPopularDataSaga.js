@@ -17,7 +17,6 @@ export function* getData() {
     }
 }
 
-
 const fetchNewData = () => {
     return new Promise((resolve, reject) => {
         fetch(nytApis.mostPopularAPI)
